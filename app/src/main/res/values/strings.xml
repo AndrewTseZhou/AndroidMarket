@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">我的应用商店</string>
+
+    <!--主页-->
+    <string name="main_des_drawer_open">打开</string>
+    <string name="main_des_drawer_close">关闭</string>
+
+    <string-array name="main_titles">
+        <item>首页</item>
+        <item>应用</item>
+        <item>游戏</item>
+        <item>专题</item>
+        <item>推荐</item>
+        <item>分类</item>
+        <item>排行</item>
+    </string-array>
+
+    <string-array name="drawlayout_titles">
+        <item>首页</item>
+        <item>设置</item>
+        <item>主题</item>
+        <item>安装包管理</item>
+        <item>反馈</item>
+        <item>检查更新</item>
+        <item>关于</item>
+        <item>退出</item>
+    </string-array>
+
+    <string name="app_detail_info_downloadnum">下载：%1$s</string>
+    <string name="app_detail_info_version">版本：%1$s</string>
+    <string name="app_detail_info_time">时间：%1$s</string>
+    <string name="app_detail_info_size">大小：%1$s</string>
+    <string name="app_detail_des_author">作者：%1$s</string>
+
+</resources>

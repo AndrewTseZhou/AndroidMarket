@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.andrew.googleplay.MainActivity">
+
+    <include
+        android:id="@+id/app_main_bar"
+        layout="@layout/app_bar"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/main_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/app_main_bar">
+
+        <!--内容部分-->
+        <FrameLayout
+            android:id="@+id/content_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <com.astuetz.PagerSlidingTabStrip
+                    xmlns:andrew="http://schemas.android.com/apk/res/com.andrew.googleplay"
+                    android:id="@+id/main_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dip"
+                    android:textSize="18dp"
+                    andrew:pstsIndicatorColor="@color/tab_indicator_selected"
+                    andrew:pstsIndicatorHeight="5dp"/>
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/main_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v4.view.ViewPager>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!--抽屉部分 必须放到下面-->
+        <ListView
+            android:id="@+id/drawer_slide"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:choiceMode="singleChoice"
+            android:divider="#55000000"
+            android:dividerHeight="1dp">
+        </ListView>
+    </android.support.v4.widget.DrawerLayout>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--收藏按钮-->
+        <Button
+            android:id="@+id/app_detail_bottom_btn_favo"
+            android:layout_width="68dp"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/detail_btn_bg"
+            android:text="收藏"
+            android:textColor="@android:color/white"/>
+
+        <!--分享按钮-->
+        <Button
+            android:id="@+id/app_detail_bottom_btn_share"
+            android:layout_width="68dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/detail_btn_bg"
+            android:text="分享"
+            android:textColor="@android:color/white"/>
+
+        <!--下载按钮-->
+        <com.andrew.googleplay.widget.ProgressButton
+            android:id="@+id/app_detail_bottom_btn_download"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/app_detail_bottom_btn_share"
+            android:layout_toRightOf="@id/app_detail_bottom_btn_favo"
+            android:background="@drawable/progress_loading_normal_bg"
+            android:text="下载"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

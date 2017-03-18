@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/item_appinfo_bg"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <com.andrew.googleplay.widget.RatioLayout
+            xmlns:andrew="http://schemas.android.com/apk/res/com.andrew.googleplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            andrew:ratio="2.43"
+            andrew:relative="width">
+
+            <!--通过宽高比和宽度值确定高度-->
+            <ImageView
+                android:id="@+id/item_subject_iv_icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_default"/>
+        </com.andrew.googleplay.widget.RatioLayout>
+
+        <TextView
+            android:id="@+id/item_subject_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="title"/>
+
+    </LinearLayout>
+
+</FrameLayout>
